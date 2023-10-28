@@ -11,18 +11,25 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
-  max-width: var(--desktop);
+  max-width: var(--tv);
   margin: 0 auto;
   padding: 0 0.5rem;
 }
 
 a,
-p {
+p,
+a::after,
+a::before {
   text-decoration: none;
   font-family: inherit;
+}
+
+li {
+  list-style-type: none;
 }
 
 a:hover {
@@ -32,6 +39,8 @@ a:hover {
 button,
 input {
   font-family: inherit;
+  border: none;
+  background-color: transparent;
 }
 button:focus,
 input:focus {
