@@ -27,9 +27,11 @@ export default function Navbar() {
     <nav className={styles.container}>
       {/* logo */}
       <div>
-        <h1>
-          <Link href={'/'}>logo</Link>
-        </h1>
+        <h3 className={styles.logo}>
+          <Link href={'/'}>
+            <span>P</span>arham mosadeqzadeh
+          </Link>
+        </h3>
       </div>
       {/* logo */}
 

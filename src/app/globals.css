@@ -4,6 +4,10 @@
   --smallLapTop: 769px;
   --desktop: 1025px;
   --tv: 1201px;
+  --main-color:#EDF1D6;
+  --second-color:#9DC08B;
+  --third-color:#609966;
+  --fourth-color:#40513B;
 }
 *,
 ::after,
