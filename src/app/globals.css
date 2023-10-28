@@ -1,3 +1,10 @@
+:root {
+  --mobile: 320px;
+  --tablets: 481px;
+  --smallLapTop: 769px;
+  --desktop: 1025px;
+  --tv: 1201px;
+}
 *,
 ::after,
 ::before {
@@ -7,7 +14,7 @@
 }
 
 body {
-  max-width: 1600px;
+  max-width: var(--desktop);
   margin: 0 auto;
   padding: 0 0.5rem;
 }
