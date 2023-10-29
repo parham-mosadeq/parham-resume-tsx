@@ -1,7 +1,10 @@
-import React from 'react'
+import HomePage from '@/components/templates/HomePage';
+import React from 'react';
 
 export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <main>
+      <HomePage />
+    </main>
+  );
 }
