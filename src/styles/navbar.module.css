@@ -62,14 +62,17 @@
   font-weight: bolder;
   text-transform: capitalize;
   font-style: italic;
-  
+}
+
+.logo span {
+  font-style: normal;
 }
 
 @media screen and (min-width: 769px) {
   .navItemsContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0 0.2rem;
     gap: 1rem;
     height: 50%;

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import styles from '#/src/styles/navbar.module.css';
 import { HiMenu, HiX } from 'react-icons/hi';
+import Image from 'next/image';
 const navItems = [
   {
     name: 'home',
@@ -29,7 +30,7 @@ export default function Navbar() {
       <div>
         <h3 className={styles.logo}>
           <Link href={'/'}>
-            <span>P</span>arham mosadeqzadeh
+            Parham mosadeqzadeh <span>{`</>`}</span>
           </Link>
         </h3>
       </div>
