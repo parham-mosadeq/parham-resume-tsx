@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import styles from '#/src/styles/navbar.module.css';
 import { HiMenu, HiX } from 'react-icons/hi';
-import Image from 'next/image';
+import { FaSun } from 'react-icons/fa6';
 const navItems = [
   {
     name: 'home',
@@ -30,7 +30,7 @@ export default function Navbar() {
       <div>
         <h3 className={styles.logo}>
           <Link href={'/'}>
-            Parham mosadeqzadeh <span>{`</>`}</span>
+            Parham <span>{`</>`}</span>
           </Link>
         </h3>
       </div>
@@ -48,6 +48,14 @@ export default function Navbar() {
             </li>
           );
         })}
+
+        <div className={styles.tools}>
+          <li>
+            <button>
+              <FaSun />
+            </button>
+          </li>
+        </div>
       </ul>
       <button onClick={() => setIsOpen((prev) => !prev)} className={styles.btn}>
         {isOpen ? <HiX /> : <HiMenu />}
