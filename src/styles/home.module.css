@@ -40,7 +40,7 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .work {
@@ -76,6 +76,27 @@
   padding: 0.4rem 1rem;
   background-color: var(--second-color);
   border-radius: 5px;
+}
+
+
+.introDesc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.readBtn {
+  background-color: var(--fourth-color);
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 14px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 1rem auto;
+  text-transform: capitalize;
+  color: var(--main-color);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 769px) {

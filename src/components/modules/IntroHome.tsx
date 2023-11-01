@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '#/src/styles/home.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 export default function IntroHome() {
   return (
     <article>
@@ -30,6 +31,7 @@ export default function IntroHome() {
             animi eveniet? Numquam, impedit ex rem sint fugit, similique, nobis
             elig debitis.
           </p>
+          <Link href={'/about'} className={styles.readBtn}>read more</Link>
         </div>
       </div>
       {/* intro */}
