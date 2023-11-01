@@ -66,6 +66,8 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin: 1rem 0;
+  
 }
 
 .tech_designs,
