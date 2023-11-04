@@ -1,0 +1,172 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* margin: 0 auto; */
+  position: relative;
+  background: url('../../public/images/contact-me-header.jfif') no-repeat
+    center/cover fixed;
+  background-origin: border-box;
+  z-index: -19;
+}
+/* 
+.header h5 {
+  text-align: center;
+  color: var(--third-color);
+  font-size: 2.5rem;
+  text-transform: capitalize;
+} */
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third-color);
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 7px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+.inputContainers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputContainers input {
+  background-color: var(--fourth-color);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  color: var(--main-color);
+  font-family: inherit;
+  max-width: 100%;
+}
+
+.inputContainers input,
+.inputContainers label {
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  margin: 1rem;
+  color: var(--main-color);
+}
+
+.formContainer p {
+  text-align: center;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: var(--third-color);
+}
+
+.formContainer textarea {
+  background-color: var(--fourth-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--main-color);
+  font-family: inherit;
+  padding: 0.4rem;
+}
+
+.formContainer textarea:focus {
+  outline: none;
+}
+
+.formContainer button {
+  background-color: var(--main-color);
+  border-radius: 4px;
+  padding: 8px 14px;
+  margin: 1rem auto;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: bolder;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.4s ease;
+  color: var(--third-color) !important;
+}
+
+.formContainer button:hover {
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
+}
+
+.formContainer h1 {
+  font-weight: 900;
+  color: var(--main-color);
+  text-transform: capitalize;
+  margin: 1.5rem 0;
+  letter-spacing: 1.5px;
+  border-bottom: 0.1px black dashed;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .header {
+    width: 80%;
+    height: 700px;
+    background-attachment: scroll;
+    background-size: contain;
+  }
+
+  .formContainer form {
+    display: grid;
+    /* flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    place-content: center;
+    gap: 3rem;
+    width: 100%;
+    padding: 0.2rem;
+    height: 400px;
+  }
+
+  .inputContainers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputContainers input {
+    background-color: var(--fourth-color);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    color: var(--main-color);
+    font-family: inherit;
+    max-width: 100%;
+  }
+
+  .inputContainers input,
+  .inputContainers label {
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    margin: 1rem;
+  }
+  .formContainer button {
+    width: fit-content;
+    margin: 0;
+    height: fit-content;
+  }
+}
