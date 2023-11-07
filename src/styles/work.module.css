@@ -1,0 +1,91 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.cardContainer {
+  max-width: 550px;
+  max-height: 750px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.imgContainer {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.imgContainer img {
+  max-height: 365px;
+  width: 100%;
+  border-radius: 17px 17px 0 0;
+  object-fit: cover;
+  margin: -0.25rem auto;
+}
+
+.descContainer {
+  background-color: var(--fourth-color);
+  margin: 0;
+  padding: 1rem;
+}
+
+.descriptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+}
+
+.descContainer a {
+  all: unset;
+}
+
+.descriptions h4 {
+  color: var(--main-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.descriptions span {
+  font-weight: bold;
+  color: var(--third-color);
+  letter-spacing: 1.4px;
+}
+
+.descriptions p {
+  text-align: justify;
+  margin: 0.5rem 0;
+  color: var(--main-color);
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+.techContainer ul {
+  display: flex;
+  gap: 2rem;
+  color: var(--second-color);
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    gap: 1.2rem;
+  }
+  .cardContainer {
+    width: 400px;
+    box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.5);
+  }
+}
